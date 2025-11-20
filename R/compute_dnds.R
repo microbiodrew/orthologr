@@ -154,7 +154,7 @@ compute_dnds <- function(complete_tbl,
                                 #multi_aln_tool_params <- paste0(aa_aln_tool,".",params)
                                 
                                 
-                                #                 pairwise_aln <- Biostrings::pairwiseAlignment(aa_seqs[[1]],aa_seqs[[2]], type = "global")
+                                #                 pairwise_aln <- pwalign::pairwiseAlignment(aa_seqs[[1]],aa_seqs[[2]], type = "global")
                                 #
                                 #                 Biostrings::writePairwiseAlignments(pairwise_aln, block.width = 60)
                                 #
