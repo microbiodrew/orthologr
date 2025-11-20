@@ -130,7 +130,7 @@ pairwise_aln <- function(file,
                 # pattern(aln) == get aligned sequence that was set as pattern input
                 # subject(aln) == get aligned sequence that was set as subject input
                 seqinr::write.fasta(
-                        sequences = list(Biostrings::pattern(aln), IRanges::subject(aln)),
+                        sequences = list(pwalign::pattern(aln), IRanges::subject(aln)),
                         names     = names,
                         file.out  = file.out
                 )
