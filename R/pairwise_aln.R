@@ -122,7 +122,7 @@ pairwise_aln <- function(file,
                 
                 # align
                 aln  <-
-                        Biostrings::pairwiseAlignment(pattern = seqs[[1]],
+                        pwalign::pairwiseAlignment(pattern = seqs[[1]],
                                                       subject = seqs[[2]],
                                                       type    = "global")
                 
